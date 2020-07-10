@@ -1,0 +1,48 @@
+.Home {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Home-buttons {
+  padding: 3vh 0 6vh 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.Home-button {
+  width: 20vw;
+  margin: 0 3vw 0 3vw;
+  padding: 2vh 1vw 2vh 1vw;
+  border: none;
+  border-radius: 25px;
+  font-family: "Ubuntu Mono", monospace;
+  font-size: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+  transition: 0.2s ease-out;
+}
+.Home-button:hover {
+  font-weight: bold;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgb(25, 25, 25, 0.8);
+}
+.Home-jumbotron {
+  padding: 6vh 15vw 6vh 15vw;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+.Home-jumbotron-welcome {
+  font-family: "Ubuntu Mono", monospace;
+  font-size: 30px;
+}
+.Home-jumbotron-icon {
+  margin: 0 0 0 3vw;
+  vertical-align: middle;
+}
+.Home-jumbotron-presentation {
+  font-size: 15px;
+  text-align: justify;
+}
