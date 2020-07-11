@@ -25,33 +25,6 @@
   align-items: center;
 }
 
-.Home-buttons {
-  padding: 0 0 6vh 0;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-.Home-link {
-  margin: 0 3vw 0 3vw;
-}
-.Home-button {
-  width: 20vw;
-  padding: 2vh 1vw 2vh 1vw;
-  border: none;
-  border-radius: 25px;
-  font-family: "Ubuntu Mono", monospace;
-  font-size: 20px;
-  background-color: rgba(255, 255, 255, 0.8);
-  cursor: pointer;
-  transition: 0.15s ease-out;
-}
-.Home-button:hover {
-  padding: 2vh 2vw 2vh 2vw;
-  font-weight: bold;
-  color: rgba(255, 255, 255, 1);
-  background-color: rgb(37, 37, 37, 0.9);
-  transform: scale(1.07);
-}
 .Home-jumbotron {
   margin: 0 10vw 1vh 10vw;
   padding: 6vh 8vw 6vh 8vw;
@@ -73,17 +46,6 @@
 }
 
 @media (max-width: 801px) {
-  .Home-buttons {
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-  }
-  .Home-link {
-    margin: 2vh 3vw 0 3vw;
-  }
-  .Home-button {
-    width: 50vw;
-  }
   .Home-jumbotron {
     margin: 0 0 1vh 0;
     padding: 6vh 10vw 6vh 10vw;

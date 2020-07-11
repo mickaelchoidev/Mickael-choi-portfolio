@@ -1,15 +1,33 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 import "./Header.css";
 
 const Header = () => {
+  const elementVariants = {
+    initial: { x: "-100%", opacity: 0 },
+    in: { x: 0, opacity: 1 },
+    out: { x: "-100%", opacity: 0 },
+  };
+  const elementTransition = {
+    delay: 0.5,
+    duration: 1,
+    transition: "easeInOut",
+  };
   return (
-    <header className="Header">
+    <motion.header
+      initial="out"
+      animate="in"
+      exit="out"
+      variants={elementVariants}
+      transition={elementTransition}
+      className="Header"
+    >
       <Link to="/" className="Header-title">
         Mickael Choi's Portfolio
       </Link>
-    </header>
+    </motion.header>
   );
 };
 

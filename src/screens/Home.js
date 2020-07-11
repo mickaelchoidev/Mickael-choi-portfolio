@@ -1,20 +1,23 @@
 import React from "react";
-import { Link } from "react-router-dom";
+
 import { motion } from "framer-motion";
 
 import Header from "../components/Header";
+import HomeButtons from "../components/HomeButtons";
 import { FaRegSmile } from "react-icons/fa";
 
 import "./Home.css";
 
 const Home = () => {
   const pageVariants = {
-    initial: { x: "-100vw" },
-    in: { x: 0 },
-    out: { x: "-100vw" },
+    initial: { opacity: 0 },
+    in: { opacity: 1 },
+    out: { opacity: 0 },
   };
+
   const pageTransition = {
-    duration: 0.5,
+    transition: "easeInOut",
+    duration: 1.5,
   };
   return (
     <motion.section
@@ -27,23 +30,7 @@ const Home = () => {
     >
       <Header />
       <div className="Home">
-        <div className="Home-buttons">
-          <Link to="/about" className="Home-link">
-            <button type="button" className="Home-button">
-              About me
-            </button>
-          </Link>
-          <Link to="/projects" className="Home-link">
-            <button type="button" className="Home-button">
-              My projects
-            </button>
-          </Link>
-          <Link to="/contact" className="Home-link">
-            <button type="button" className="Home-button">
-              Contact me
-            </button>
-          </Link>
-        </div>
+        <HomeButtons />
         <div className="Home-jumbotron">
           <p className="Home-jumbotron-welcome">
             Hello World ! Welcome to my website
@@ -56,7 +43,7 @@ const Home = () => {
               margin: "4vh auto 4vh auto",
               width: "70%",
               height: "px",
-              color: "rgba(37,37,37, 0.8)",
+              color: "rgba(37,37,37, 0.7)",
             }}
           />
           <p className="Home-jumbotron-presentation">
