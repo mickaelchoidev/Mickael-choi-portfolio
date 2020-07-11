@@ -1,10 +1,11 @@
 .Projects-section {
+  padding: 1vh 0 1vh 0;
   width: 100vw;
   height: 100vh;
   background-image: linear-gradient(
       0deg,
       rgba(0, 0, 0, 0) 20%,
-      rgba(25, 25, 25, 0) 80%
+      rgba(37, 37, 37, 0) 80%
     ),
     url(../images/tiles-shape.jpg);
   background-repeat: no-repeat;

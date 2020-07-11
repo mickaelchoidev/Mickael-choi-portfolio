@@ -28,17 +28,17 @@ const Home = () => {
       <Header />
       <div className="Home">
         <div className="Home-buttons">
-          <Link to="/about">
+          <Link to="/about" className="Home-link">
             <button type="button" className="Home-button">
               About me
             </button>
           </Link>
-          <Link to="/projects">
+          <Link to="/projects" className="Home-link">
             <button type="button" className="Home-button">
               My projects
             </button>
           </Link>
-          <Link to="/contact">
+          <Link to="/contact" className="Home-link">
             <button type="button" className="Home-button">
               Contact me
             </button>
@@ -48,15 +48,15 @@ const Home = () => {
           <p className="Home-jumbotron-welcome">
             Hello World ! Welcome to my website
             <span className="Home-jumbotron-icon">
-              <FaRegSmile size="30px" color="#191919" />
+              <FaRegSmile size="30px" color="#252525" />
             </span>
           </p>
           <hr
             style={{
               margin: "4vh auto 4vh auto",
               width: "70%",
-              height: "1px",
-              color: "rgba(25, 25, 25, 0.8)",
+              height: "px",
+              color: "rgba(37,37,37, 0.8)",
             }}
           />
           <p className="Home-jumbotron-presentation">

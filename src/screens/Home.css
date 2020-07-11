@@ -3,10 +3,10 @@
   height: 100vh;
   background-image: linear-gradient(
       0deg,
-      rgba(25, 25, 25, 0.1) 25%,
-      rgba(25, 25, 25, 0.1) 75%
+      rgba(37, 37, 37, 0.2) 25%,
+      rgba(37, 37, 37, 0) 75%
     ),
-    url(../images/texture.jpg);
+    url(../images/hardwood.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -31,9 +31,11 @@
   display: flex;
   justify-content: center;
 }
+.Home-link {
+  margin: 0 3vw 0 3vw;
+}
 .Home-button {
   width: 20vw;
-  margin: 0 3vw 0 3vw;
   padding: 2vh 1vw 2vh 1vw;
   border: none;
   border-radius: 25px;
@@ -47,13 +49,15 @@
   padding: 2vh 2vw 2vh 2vw;
   font-weight: bold;
   color: rgba(255, 255, 255, 1);
-  background-color: rgb(25, 25, 25, 0.9);
+  background-color: rgb(37, 37, 37, 0.9);
   transform: scale(1.07);
 }
 .Home-jumbotron {
-  padding: 6vh 15vw 6vh 15vw;
-  width: 100%;
-  background-color: rgba(255, 255, 255, 0.6);
+  margin: 0 10vw 1vh 10vw;
+  padding: 6vh 8vw 6vh 8vw;
+  width: auto;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 25px;
 }
 .Home-jumbotron-welcome {
   font-family: "Ubuntu Mono", monospace;
@@ -74,11 +78,14 @@
     justify-content: flex-start;
     align-items: center;
   }
-  .Home-button {
-    width: 50vw;
+  .Home-link {
     margin: 2vh 3vw 0 3vw;
   }
+  .Home-button {
+    width: 50vw;
+  }
   .Home-jumbotron {
+    margin: 0 0 1vh 0;
     padding: 6vh 10vw 6vh 10vw;
   }
 }

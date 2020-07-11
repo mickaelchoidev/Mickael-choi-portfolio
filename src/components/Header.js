@@ -6,8 +6,8 @@ import "./Header.css";
 const Header = () => {
   return (
     <header className="Header">
-      <Link to="/">
-        <b className="Header-title">Mickael Choi's Portfolio</b>
+      <Link to="/" className="Header-title">
+        Mickael Choi's Portfolio
       </Link>
     </header>
   );
