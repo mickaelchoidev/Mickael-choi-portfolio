@@ -14,7 +14,6 @@ const Home = () => {
     out: { x: "-100vw" },
   };
   const pageTransition = {
-    transition: "ease",
     duration: 0.5,
   };
   return (
