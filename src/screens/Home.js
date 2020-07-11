@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
 import Header from "../components/Header";
@@ -8,14 +8,13 @@ import { FaRegSmile } from "react-icons/fa";
 import "./Home.css";
 
 const Home = () => {
-  const location = useLocation();
   const pageVariants = {
     initial: { x: "-100vw" },
     in: { x: 0 },
     out: { x: "-100vw" },
   };
   const pageTransition = {
-    transition: "linear",
+    transition: "ease",
     duration: 0.5,
   };
   return (
