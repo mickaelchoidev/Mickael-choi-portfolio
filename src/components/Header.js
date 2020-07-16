@@ -11,7 +11,7 @@ const Header = () => {
     out: { x: "-100%", opacity: 0 },
   };
   const elementTransition = {
-    delay: 0.5,
+    delay: 0,
     duration: 1,
     transition: "easeInOut",
   };

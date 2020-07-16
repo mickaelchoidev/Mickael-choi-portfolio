@@ -6,13 +6,13 @@ import "./HomeButtons.css";
 
 const HomeButtons = () => {
   const aboutVariants = {
-    initial: { y: "-100%", opacity: 0 },
+    initial: { y: "-50%", opacity: 0 },
     in: { y: 0, opacity: 1 },
-    out: { y: "-100%", opacity: 0 },
+    out: { y: "-50%", opacity: 0 },
   };
   const elementTransition = {
-    delay: 0.5,
-    duration: 1.5,
+    delay: 0,
+    duration: 1,
     transition: "easeInOut",
   };
   return (

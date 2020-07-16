@@ -8,13 +8,14 @@ import "./Projects.css";
 
 const Projects = () => {
   const pageVariants = {
-    initial: { x: "100vw" },
-    in: { x: 0 },
-    out: { x: "100vw" },
+    initial: { opacity: 0 },
+    in: { opacity: 1 },
+    out: { opacity: 0 },
   };
+
   const pageTransition = {
-    transition: "linear",
-    duration: 0.5,
+    transition: "easeInOut",
+    duration: 1.5,
   };
   return (
     <motion.section

@@ -12,7 +12,7 @@
   letter-spacing: 5px;
 }
 
-@media (max-width: 601px) {
+@media (max-width: 600px) {
   .Header {
     margin: 0 0 4vh 0;
     padding: 0.5vh auto;
