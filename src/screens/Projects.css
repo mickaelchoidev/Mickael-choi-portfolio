@@ -1,5 +1,4 @@
 .Projects-section {
-  padding: 1vh 0 1vh 0;
   width: 100vw;
   height: 100vh;
   background-image: linear-gradient(
@@ -7,7 +6,7 @@
       rgba(0, 0, 0, 0) 20%,
       rgba(37, 37, 37, 0) 80%
     ),
-    url(../images/tiles-shape.jpg);
+    url(../images/sea.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -16,4 +15,13 @@
   overflow-x: auto;
   scrollbar-width: none;
   position: absolute;
+}
+
+.Projects {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
 }

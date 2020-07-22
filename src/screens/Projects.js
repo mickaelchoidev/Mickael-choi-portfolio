@@ -1,8 +1,8 @@
 import React from "react";
-// import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
 import Header from "../components/Header";
+import Card from "../components/Card";
 
 import "./Projects.css";
 
@@ -10,13 +10,14 @@ const Projects = () => {
   const pageVariants = {
     initial: { opacity: 0 },
     in: { opacity: 1 },
-    out: { opacity: 0 },
+    out: { opacity: 1 },
   };
 
   const pageTransition = {
     transition: "easeInOut",
-    duration: 1.5,
+    duration: 1,
   };
+
   return (
     <motion.section
       initial="initial"
@@ -27,7 +28,23 @@ const Projects = () => {
       className="Projects-section"
     >
       <Header />
-      <h1>Projects page</h1>
+      <div className="Projects">
+        <div className="Projects-list">
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+          <Card />
+        </div>
+      </div>
     </motion.section>
   );
 };

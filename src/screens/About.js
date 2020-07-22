@@ -10,12 +10,12 @@ const About = () => {
   const pageVariants = {
     initial: { opacity: 0 },
     in: { opacity: 1 },
-    out: { opacity: 0 },
+    out: { opacity: 1 },
   };
 
   const pageTransition = {
     transition: "easeInOut",
-    duration: 1.5,
+    duration: 1,
   };
   return (
     <motion.section

@@ -15,18 +15,20 @@ const Contact = () => {
   const pageVariants = {
     initial: { opacity: 0 },
     in: { opacity: 1 },
-    out: { opacity: 0 },
+    out: { opacity: 1 },
   };
+
   const pageTransition = {
     transition: "easeInOut",
-    duration: 1.5,
+    duration: 1,
   };
-  const linkVariants = {
-    initial: { y: "100%", opacity: 0 },
-    in: { y: 0, opacity: 1 },
-    out: { y: "100%", opacity: 0 },
+  const elementVariants = {
+    initial: { x: "-100%", opacity: 0 },
+    in: { x: 0, opacity: 1 },
+    out: { x: "100vw", opacity: 1 },
   };
-  const linkTransition = {
+  const elementTransition = {
+    delay: 0,
     duration: 1,
     transition: "easeInOut",
   };
@@ -49,11 +51,11 @@ const Contact = () => {
           }}
         >
           <motion.div
-            initial="out"
+            initial="initial"
             animate="in"
             exit="out"
-            variants={linkVariants}
-            transition={linkTransition}
+            variants={elementVariants}
+            transition={elementTransition}
             className="Contact-link-wrapper"
           >
             <a

@@ -26,7 +26,7 @@
 }
 
 .Home-jumbotron {
-  margin: 0 10vw 1vh 10vw;
+  margin: 0 10vw 0 10vw;
   padding: 6vh 8vw 6vh 8vw;
   width: auto;
   background-color: rgba(255, 255, 255, 0.8);
@@ -47,7 +47,7 @@
 
 @media (max-width: 801px) {
   .Home-jumbotron {
-    margin: 0 0 1vh 0;
+    margin: 0;
     padding: 6vh 10vw 6vh 10vw;
   }
 }

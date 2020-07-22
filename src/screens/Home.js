@@ -12,16 +12,26 @@ const Home = () => {
   const pageVariants = {
     initial: { opacity: 0 },
     in: { opacity: 1 },
-    out: { opacity: 0 },
+    out: { opacity: 1 },
   };
 
   const pageTransition = {
     transition: "easeInOut",
-    duration: 1.5,
+    duration: 1,
+  };
+  const elementVariants = {
+    initial: { x: "-100%", opacity: 0 },
+    in: { x: 0, opacity: 1 },
+    out: { x: "100vw", opacity: 1 },
+  };
+  const elementTransition = {
+    delay: 0,
+    duration: 1,
+    transition: "easeInOut",
   };
   return (
     <motion.section
-      initial="out"
+      initial="initial"
       animate="in"
       exit="out"
       variants={pageVariants}
@@ -31,7 +41,14 @@ const Home = () => {
       <Header />
       <div className="Home">
         <HomeButtons />
-        <div className="Home-jumbotron">
+        <motion.div
+          initial="initial"
+          animate="in"
+          exit="out"
+          variants={elementVariants}
+          transition={elementTransition}
+          className="Home-jumbotron"
+        >
           <p className="Home-jumbotron-welcome">
             Hello World ! Welcome to my website
             <span className="Home-jumbotron-icon">
@@ -64,7 +81,7 @@ const Home = () => {
             professional contract can be a real opportunity for me to progress
             in the best possible way.
           </p>
-        </div>
+        </motion.div>
       </div>
     </motion.section>
   );

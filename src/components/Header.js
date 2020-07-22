@@ -8,7 +8,7 @@ const Header = () => {
   const elementVariants = {
     initial: { x: "-100%", opacity: 0 },
     in: { x: 0, opacity: 1 },
-    out: { x: "-100%", opacity: 0 },
+    out: { x: "100vw", opacity: 1 },
   };
   const elementTransition = {
     delay: 0,
@@ -17,7 +17,7 @@ const Header = () => {
   };
   return (
     <motion.header
-      initial="out"
+      initial="initial"
       animate="in"
       exit="out"
       variants={elementVariants}
